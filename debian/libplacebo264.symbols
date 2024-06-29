@@ -1,5 +1,7 @@
 libplacebo.so.264 libplacebo264 #MINVER#
 * Build-Depends-Package: libplacebo-dev
+ _ZNSt6vectorIjSaIjEED1Ev@Base 1:5.264.1-1ubuntu1
+ _ZNSt6vectorIjSaIjEED2Ev@Base 1:5.264.1-1ubuntu1
  memcpy_layout@Base 1.7.0
  pl_alpha_overlay@Base 3.120.3
  pl_bit_encoding_equal@Base 0.2.0
@@ -15,8 +17,8 @@ libplacebo.so.264 libplacebo264 #MINVER#
  pl_chroma_location_offset@Base 0.2.0
  pl_color_adjustment_neutral@Base 0.2.0
  pl_color_levels_guess@Base 2.72.0
+ pl_color_light_is_scene_referred@Base 1:5.264.1-1ubuntu1
  pl_color_map_default_params@Base 0.2.0
- pl_color_map_high_quality_params@Base 5.264.1
  pl_color_primaries_guess@Base 0.2.0
  pl_color_primaries_is_wide_gamut@Base 0.2.0
  pl_color_repr_decode@Base 0.2.0
@@ -63,7 +65,6 @@ libplacebo.so.264 libplacebo264 #MINVER#
  pl_dispatch_reset_frame@Base 4.192.0
  pl_dispatch_save@Base 3.104.0
  pl_dispatch_vertex@Base 3.120.3
- pl_distort_default_params@Base 5.264.1
  pl_dither_default_params@Base 0.2.0
  pl_error_diffusion_atkinson@Base 5.229.1
  pl_error_diffusion_burkes@Base 5.229.1
@@ -134,7 +135,6 @@ libplacebo.so.264 libplacebo264 #MINVER#
  pl_find_filter_preset@Base 3.120.3
  pl_find_fmt@Base 0.4.0
  pl_find_fourcc@Base 3.104.0
- pl_find_gamut_map_function@Base 5.264.1
  pl_find_named_fmt@Base 0.4.0
  pl_find_tone_map_function@Base 5.229.1
  pl_find_vertex_fmt@Base 0.4.0
@@ -147,20 +147,6 @@ libplacebo.so.264 libplacebo264 #MINVER#
  pl_frame_is_cropped@Base 3.104.0
  pl_frame_mixers@Base 3.120.3
  pl_frame_set_chroma_location@Base 3.104.0
- pl_gamut_map_absolute@Base 5.264.1
- pl_gamut_map_clip@Base 5.264.1
- pl_gamut_map_darken@Base 5.264.1
- pl_gamut_map_desaturate@Base 5.264.1
- pl_gamut_map_functions@Base 5.264.1
- pl_gamut_map_generate@Base 5.264.1
- pl_gamut_map_highlight@Base 5.264.1
- pl_gamut_map_linear@Base 5.264.1
- pl_gamut_map_params_equal@Base 5.264.1
- pl_gamut_map_params_noop@Base 5.264.1
- pl_gamut_map_perceptual@Base 5.264.1
- pl_gamut_map_relative@Base 5.264.1
- pl_gamut_map_sample@Base 5.264.1
- pl_gamut_map_saturation@Base 5.264.1
  pl_generate_bayer_matrix@Base 0.2.0
  pl_generate_blue_noise@Base 0.2.0
  pl_get_adaptation_matrix@Base 3.120.3
@@ -190,10 +176,6 @@ libplacebo.so.264 libplacebo264 #MINVER#
  pl_icc_open@Base 4.208.0
  pl_icc_profile_compute_signature@Base 3.104.0
  pl_icc_profile_equal@Base 0.5.0
- pl_ipt_ipt2lms@Base 5.264.1
- pl_ipt_lms2ipt@Base 5.264.1
- pl_ipt_lms2rgb@Base 5.264.1
- pl_ipt_rgb2lms@Base 5.264.1
  pl_log_color@Base 0.2.0
  pl_log_create_264@Base 5.264.1
  pl_log_default_params@Base 4.157.0
@@ -206,11 +188,8 @@ libplacebo.so.264 libplacebo264 #MINVER#
  pl_matrix2x2_apply@Base 0.2.0
  pl_matrix2x2_apply_rc@Base 2.72.0
  pl_matrix2x2_identity@Base 0.2.0
- pl_matrix2x2_invert@Base 5.264.1
  pl_matrix2x2_mul@Base 4.208.0
  pl_matrix2x2_rmul@Base 4.208.0
- pl_matrix2x2_rotation@Base 5.264.1
- pl_matrix2x2_scale@Base 5.264.1
  pl_matrix3x3_apply@Base 0.2.0
  pl_matrix3x3_apply_rc@Base 2.72.0
  pl_matrix3x3_identity@Base 0.2.0
@@ -225,7 +204,6 @@ libplacebo.so.264 libplacebo264 #MINVER#
  pl_num_filter_function_presets@Base 3.120.3
  pl_num_filter_presets@Base 3.120.3
  pl_num_frame_mixers@Base 3.120.3
- pl_num_gamut_map_functions@Base 5.264.1
  pl_num_scale_filters@Base 4.157.0
  pl_num_tone_map_functions@Base 4.192.0
  pl_opengl_create@Base 2.72.0
@@ -240,7 +218,6 @@ libplacebo.so.264 libplacebo264 #MINVER#
  pl_pass_destroy@Base 0.4.0
  pl_pass_run@Base 0.4.0
  pl_peak_detect_default_params@Base 1.18.0
- pl_peak_detect_high_quality_params@Base 5.264.1
  pl_plane_data_align@Base 3.104.0
  pl_plane_data_from_comps@Base 5.264.1
  pl_plane_data_from_mask@Base 0.3.0
@@ -286,7 +263,6 @@ libplacebo.so.264 libplacebo264 #MINVER#
  pl_scale_filters@Base 4.157.0
  pl_shader_alloc@Base 0.2.0
  pl_shader_color_map@Base 0.2.0
- pl_shader_color_map_ex@Base 5.264.1
  pl_shader_cone_distort@Base 0.6.0
  pl_shader_custom@Base 3.104.0
  pl_shader_custom_lut@Base 3.120.3
@@ -295,17 +271,13 @@ libplacebo.so.264 libplacebo264 #MINVER#
  pl_shader_deinterlace@Base 5.229.1
  pl_shader_delinearize@Base 0.2.0
  pl_shader_detect_peak@Base 1.18.0
- pl_shader_distort@Base 5.264.1
  pl_shader_dither@Base 0.2.0
  pl_shader_dovi_reshape@Base 4.192.0
  pl_shader_encode_color@Base 0.4.0
  pl_shader_error_diffusion@Base 5.229.1
- pl_shader_extract_features@Base 5.264.1
  pl_shader_film_grain@Base 4.192.0
  pl_shader_finalize@Base 0.2.0
  pl_shader_free@Base 0.2.0
- pl_shader_info_deref@Base 5.264.1
- pl_shader_info_ref@Base 5.264.1
  pl_shader_is_compute@Base 0.2.0
  pl_shader_is_failed@Base 1.7.0
  pl_shader_linearize@Base 0.2.0
@@ -317,6 +289,7 @@ libplacebo.so.264 libplacebo264 #MINVER#
  pl_shader_sample_direct@Base 0.2.0
  pl_shader_sample_nearest@Base 3.104.0
  pl_shader_sample_ortho2@Base 5.229.1
+ pl_shader_sample_ortho@Base 1:5.264.1-1ubuntu1
  pl_shader_sample_oversample@Base 4.157.0
  pl_shader_sample_polar@Base 0.2.0
  pl_shader_set_alpha@Base 4.192.0
@@ -370,12 +343,9 @@ libplacebo.so.264 libplacebo264 #MINVER#
  pl_tone_map_st2094_40@Base 5.264.1
  pl_transform2x2_apply@Base 0.2.0
  pl_transform2x2_apply_rc@Base 2.72.0
- pl_transform2x2_bounds@Base 5.264.1
  pl_transform2x2_identity@Base 0.2.0
- pl_transform2x2_invert@Base 5.264.1
  pl_transform2x2_mul@Base 4.208.0
  pl_transform2x2_rmul@Base 4.208.0
- pl_transform2x2_scale@Base 5.264.1
  pl_transform3x3_apply@Base 0.2.0
  pl_transform3x3_apply_rc@Base 2.72.0
  pl_transform3x3_identity@Base 0.2.0
@@ -426,16 +396,12 @@ libplacebo.so.264 libplacebo264 #MINVER#
  pl_vulkan_default_params@Base 0.2.0
  pl_vulkan_destroy@Base 0.2.0
  pl_vulkan_get@Base 4.192.0
- pl_vulkan_hold@Base 0.5.0
  pl_vulkan_hold_ex@Base 5.264.1
- pl_vulkan_hold_raw@Base 2.72.0
  pl_vulkan_import@Base 2.72.0
  pl_vulkan_num_recommended_extensions@Base 2.72.0
  pl_vulkan_recommended_extensions@Base 2.72.0
  pl_vulkan_recommended_features@Base 2.72.0
- pl_vulkan_release@Base 0.5.0
  pl_vulkan_release_ex@Base 5.264.1
- pl_vulkan_required_features@Base 5.264.1
  pl_vulkan_sem_create@Base 5.264.1
  pl_vulkan_sem_destroy@Base 5.264.1
  pl_vulkan_swapchain_suboptimal@Base 1.29.1
