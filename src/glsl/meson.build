@@ -44,7 +44,7 @@ elif not glslang_req.disabled()
         # Always required for static linking
         cxx.find_library('MachineIndependent', required: true, static: true),
         cxx.find_library('OSDependent',        required: true, static: true),
-        cxx.find_library('OGLCompiler',        required: false, static: true),
+        cxx.find_library('OGLCompiler',        required: true, static: true),
         cxx.find_library('GenericCodeGen',     required: true, static: true),
         # SPIRV-Tools are required only if optimizer is enabled in glslang build
         cxx.find_library('SPIRV-Tools',        required: false, static: true),
